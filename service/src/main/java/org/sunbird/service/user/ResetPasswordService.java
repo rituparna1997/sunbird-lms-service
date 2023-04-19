@@ -55,8 +55,12 @@ public class ResetPasswordService {
   public String getSunbirdLoginUrl() {
     StringBuilder webUrl = new StringBuilder();
     webUrl.append(ProjectUtil.getConfigValue(JsonKey.SUNBIRD_WEB_URL));
+<<<<<<< HEAD
     // Default value for PASSWORD_RESET_LOGIN_PAGE_URL is /resources as configured in
     // externalresource.properties
+=======
+    //Default value for PASSWORD_RESET_LOGIN_PAGE_URL is /resources as configured in externalresource.properties
+>>>>>>> release-4.10.0_RC4
     webUrl.append(ProjectUtil.getConfigValue(JsonKey.PASSWORD_RESET_LOGIN_PAGE_URL));
     return webUrl.toString();
   }

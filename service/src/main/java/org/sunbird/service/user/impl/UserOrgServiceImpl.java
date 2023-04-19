@@ -69,8 +69,13 @@ public class UserOrgServiceImpl implements UserOrgService {
         Map<String, Object> res = resList.get(0);
         try {
           UserOrg userOrg = new UserOrg();
+<<<<<<< HEAD
           userOrg.setUserId((String) res.get(JsonKey.USER_ID));
           userOrg.setOrganisationId((String) res.get(JsonKey.ORGANISATION_ID));
+=======
+          userOrg.setUserId((String)res.get(JsonKey.USER_ID));
+          userOrg.setOrganisationId((String)res.get(JsonKey.ORGANISATION_ID));
+>>>>>>> release-4.10.0_RC4
           userOrg.setDeleted(true);
           userOrgDao.updateUserOrg(userOrg, context);
         } catch (Exception e) {

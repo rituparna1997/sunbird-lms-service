@@ -202,12 +202,18 @@ public class OrgBulkUploadBackgroundJobActor extends BaseBulkUploadBackgroundJob
     Map<String, Object> row = mapper.convertValue(org, Map.class);
     row.put(JsonKey.LOCATION_CODE, locationCodes);
     String orgId;
+<<<<<<< HEAD
     row.put(
         JsonKey.ORG_TYPE, OrgTypeValidator.getInstance().getTypeByValue(org.getOrganisationType()));
     if (org.getOrganisationSubType() != null) {
       row.put(
           JsonKey.ORG_SUB_TYPE,
           OrgTypeValidator.getInstance().getTypeByValue(org.getOrganisationSubType()));
+=======
+    row.put(JsonKey.ORG_TYPE, OrgTypeValidator.getInstance().getTypeByValue(org.getOrganisationType()));
+    if (org.getOrganisationSubType() != null) {
+      row.put(JsonKey.ORG_SUB_TYPE, OrgTypeValidator.getInstance().getTypeByValue(org.getOrganisationSubType()));
+>>>>>>> release-4.10.0_RC4
     }
     try {
       orgId =
@@ -247,12 +253,18 @@ public class OrgBulkUploadBackgroundJobActor extends BaseBulkUploadBackgroundJob
     ObjectMapper mapper = new ObjectMapper();
     Map<String, Object> row = mapper.convertValue(org, Map.class);
     row.put(JsonKey.LOCATION_CODE, locationCodes);
+<<<<<<< HEAD
     row.put(
         JsonKey.ORG_TYPE, OrgTypeValidator.getInstance().getTypeByValue(org.getOrganisationType()));
     if (org.getOrganisationSubType() != null) {
       row.put(
           JsonKey.ORG_SUB_TYPE,
           OrgTypeValidator.getInstance().getTypeByValue(org.getOrganisationSubType()));
+=======
+    row.put(JsonKey.ORG_TYPE, OrgTypeValidator.getInstance().getTypeByValue(org.getOrganisationType()));
+    if (org.getOrganisationSubType() != null) {
+      row.put(JsonKey.ORG_SUB_TYPE, OrgTypeValidator.getInstance().getTypeByValue(org.getOrganisationSubType()));
+>>>>>>> release-4.10.0_RC4
     }
     try {
       row.put(JsonKey.ORGANISATION_ID, org.getId());

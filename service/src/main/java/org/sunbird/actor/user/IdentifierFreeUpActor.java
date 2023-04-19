@@ -18,9 +18,15 @@ import org.sunbird.response.Response;
 import org.sunbird.service.user.UserService;
 import org.sunbird.service.user.impl.UserLookUpServiceImpl;
 import org.sunbird.service.user.impl.UserServiceImpl;
+<<<<<<< HEAD
 import org.sunbird.sso.SSOServiceFactory;
 import org.sunbird.util.ProjectUtil;
 
+=======
+import org.sunbird.sso.SSOManager;
+import org.sunbird.sso.SSOServiceFactory;
+import org.sunbird.util.ProjectUtil;
+>>>>>>> release-4.10.0_RC4
 /**
  * this Actor class is being used to free Up used User Identifier for now it only free Up user
  * Email, Phone.
